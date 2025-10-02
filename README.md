@@ -17,10 +17,10 @@ Build end-to-end AI projects
 AI-Learning-Journey/
 │
 ├── Lesson1_Basics/          
-│   └── python_basics.py      # Lists, functions, simple pandas
+│     python_basics.py      # Lists, functions, simple pandas
 │
 ├── Lesson2_EDA/             
-│   └── Lesson2_EDA_Tips_Notebook.ipynb   # Exploratory Data Analysis
+│     Lesson2_EDA_Tips_Notebook.ipynb   # Exploratory Data Analysis
 │
 ├── datasets/                 # Example datasets (CSV, etc.)
 │
