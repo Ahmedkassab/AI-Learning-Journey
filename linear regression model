@@ -1,0 +1,19 @@
+import numpy  as np
+from sklearn.linear_model import LinearRegression
+import matplotlib.pyplot as plt
+sizes = np.array([1500, 1600, 1700, 1800, 1900]).reshape(-1, 1) # Feature
+prices = np.array([300000, 320000, 340000, 360000, 380000])# Target
+#Train mosel
+Module = LinearRegression()
+Module.fit(sizes, prices)
+# predict price for a 1500 sqft house
+predicted_price = Module.predict(np.array([[1500]]))
+print(f'Predicted price for a 1500 sqft house: ${predicted_price[0]:.2f}')
+# plot data and regression line
+plt.scatter(sizes, prices, color='blue')    # Data points
+plt.plot(sizes, Module.predict(sizes), color='red')  # Regression line    
+plt.xlabel("size (sqft)")
+plt.ylabel("Price($)")
+plt.legend()
+plt.show()
+print("AI")
